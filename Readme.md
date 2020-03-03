@@ -3,6 +3,8 @@
 
 My installation of EZProxy is in the directory /usr/local/ezproxy/ and I link the latest ezproxy version ezproxy -> ezproxy.6_5_2.bin
 
+I use Ubuntu Linux 18 LTS.
+
 ### Installation:
 
 1. Edit this file to /usr/local/ezproxy/ezproxy.service 
