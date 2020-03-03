@@ -23,7 +23,7 @@ or status:
 
 1. systemctl status ezproxy.service
 
-When changing booting procedure (maybe from init.d --> systemd), don't forget to to disable the othere one...
+When changing booting procedure (maybe from init.d --> systemd), don't forget to to disable the other one...
 
 Here is my ezproxy.service file:
 
