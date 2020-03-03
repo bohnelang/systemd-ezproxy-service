@@ -1,9 +1,10 @@
 # EZProxy service file for systemd start/stop
 ## ezproxy.service
 
-My installation of EZProxy is in the directory /usr/local/ezproxy/ and I link the latest ezproxy version ezproxy -> ezproxy.6_5_2.bin
+My installation of EZProxy is in the directory /usr/local/ezproxy/ and I link the latest ezproxy version like this: 
+ezproxy -> ezproxy.6_5_2.bin
 
-I use Ubuntu Linux 18 LTS.
+I am using Ubuntu Linux 18 LTS.
 
 ### Installation:
 
@@ -22,9 +23,9 @@ or status:
 
 1. systemctl status ezproxy.service
 
+When changing booting procedure (maybe from init.d --> systemd), don't forget to to disable the othere one...
 
-
-Here is my ezproxy.serive file:
+Here is my ezproxy.service file:
 
 
 ```
