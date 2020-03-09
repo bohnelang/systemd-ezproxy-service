@@ -92,7 +92,7 @@ Alias=ezproxy-tuned.service
 # Installation:
 #
 # Edit this file to /usr/local/ezproxy/ezproxy-tuned.service 
-# ln -s /usr/local/ezproxy/ezproxy.service /lib/systemd/system/ezproxy-tuned.service 
+# ln -s /usr/local/ezproxy/ezproxy-tuned.service /lib/systemd/system/ezproxy-tuned.service 
 #
 # systemctl daemon-reload 
 # systemctl enable ezproxy-tuned.service
