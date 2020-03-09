@@ -7,18 +7,13 @@ After=Network.target nss-lookup.target local-fs.target
 [Service]
 Type=forking
 WorkingDirectory=/usr/local/ezproxy
-ExecStartPre=/sbin/sysctl -w net.ipv4.ip_local_port_range="10000 65535"
-ExecStartPre=/sbin/sysctl -w net.ipv4.tcp_tw_reuse=1
-ExecStartPre=/sbin/sysctl -w net.ipv4.tcp_fin_timeout=15
 ExecStart=/usr/local/ezproxy/ezproxy start
 ExecStop=/usr/local/ezproxy/ezproxy stop
 ExecReload=/usr/local/ezproxy/ezproxy restart
 KillMode=none
 Restart=on-failure
 RestartSec=3
-LimitNOFILE=60000
-LimitNPROC=infinity
-LimitSTACK=infinity
+
 
 [Install]
 WantedBy=multi-user.target
