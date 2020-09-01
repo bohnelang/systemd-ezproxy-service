@@ -33,7 +33,7 @@ Here is my ezproxy.service file:
 Description=EZProxy
 Documentation=https://help.oclc.org/Library_Management/EZproxy
 PartOf=Network.target
-After=Network.target nss-lookup.target local-fs.target
+After=local-fs.target nss-lookup.target  network-online.target
 
 [Service]
 Type=forking
@@ -67,7 +67,7 @@ Here is my ezproxy-tuned.service file, taht is optimized for high network load:
 Description=EZProxy (network tuned)
 Documentation=https://help.oclc.org/Library_Management/EZproxy
 PartOf=Network.target
-After=Network.target nss-lookup.target local-fs.target
+After=local-fs.target nss-lookup.target  network-online.target
 
 [Service]
 Type=forking
