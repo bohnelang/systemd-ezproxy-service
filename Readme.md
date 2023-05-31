@@ -69,6 +69,7 @@ Description=EZProxy (network tuned)
 Documentation=https://help.oclc.org/Library_Management/EZproxy
 PartOf=Network.target
 After=local-fs.target nss-lookup.target  network-online.target
+Wants = network-online.target
 
 [Service]
 Type=forking
